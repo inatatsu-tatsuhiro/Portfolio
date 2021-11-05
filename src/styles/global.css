@@ -1,0 +1,13 @@
+body {
+  background: rgb(31, 31, 31)
+}
+
+@font-face {
+  font-family: 'tanugo';
+  src: local('Tanugo'), url('./fonts/Tanugo-Regular.woff2') format('woff2');
+  font-weight: regular;
+}
+
+body::-webkit-scrollbar {
+  display:none;
+}
