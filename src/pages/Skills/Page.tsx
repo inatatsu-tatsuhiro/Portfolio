@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useWindowSize } from 'react-use'
 
 import {data} from './data'
 
@@ -8,6 +9,8 @@ import SkillCard from '../../components/molecules/SkillCard/Component'
 const Page: React.VFC = () => {
 
   const json = data.json
+  const width = useWindowSize().width
+  const l = width < 1400
   return (
       <div>
         <Root>
@@ -21,7 +24,7 @@ const Page: React.VFC = () => {
               />
             )
           })}
-          {[...Array(8)].map((_, k) => {
+          {l || [...Array(8)].map((_, k) => {
             return <Dummy key={k} />
           })}
         </Root>

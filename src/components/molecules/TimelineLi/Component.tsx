@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useWindowSize } from 'react-use'
 
-import Color from '../../../utils/Color'
+import Color, { addAlpha } from '../../../utils/Color'
 
 export interface Props {
   date: string
@@ -14,12 +15,15 @@ export interface Props {
 
 const Component: React.FC<Props> = ({date, title, discription, setOpen, num, k}) => {
   const isSelect = num === k
+  const width = useWindowSize().width
+  const l = width < 1400
   return (
     <Root onClick={() => setOpen(k)}>
       <Dot color={isSelect ? Color.pink : Color.default} />
-      <Date>{date}</Date>
+      {l || <Date>{date}</Date>}
       <Title>{title}</Title>
       {isSelect && <Disctiption>&nbsp;&nbsp;{discription}</Disctiption>}
+      {isSelect && l && <DateMini>{date}</DateMini>}
     </Root>
   )
 }
@@ -39,6 +43,11 @@ const Date = styled('span')`
   top: 50%;
   left: -160px;
   line-height: 20px;
+`
+const DateMini = styled('div')`
+  margin-top: 8px;
+  color: ${addAlpha(Color.white, 0.6)};
+  text-align: right;
 `
 
 const Disctiption = styled('div')`

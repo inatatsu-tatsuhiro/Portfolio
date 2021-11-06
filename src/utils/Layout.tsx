@@ -7,7 +7,7 @@ import NameCard from '../components/molecules/NameCard/Component'
 import Typography from '../components/atoms/Typography/Component'
 import Color, { addAlpha } from '../utils/Color'
 
-interface Props {
+export interface Props {
   page: React.ReactNode
   title: string
 }

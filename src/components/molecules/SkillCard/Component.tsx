@@ -1,6 +1,8 @@
-import Typography from 'components/atoms/Typography/Component'
 import * as React from 'react'
 import styled from 'styled-components'
+import { useWindowSize } from 'react-use'
+
+import Typography from 'components/atoms/Typography/Component'
 import Color, { addAlpha } from 'utils/Color'
 import Card from '../../atoms/Card/Component'
 
@@ -12,8 +14,10 @@ export interface Props {
 }
 
 const Component: React.FC<Props> = ({ name, logo, since, discription }) => {
+    const width = useWindowSize().width
+    const l = width < 1400
   return (
-    <Card width="40%">
+    <Card width={l ? "80%" : "40%"}>
       <Flex>
         <IconWrapper>{logo}</IconWrapper>
         <Text size="24px" weight={300}>

@@ -4,7 +4,7 @@ import Card from '../../atoms/Card/Component'
 import Typography from '../../atoms/Typography/Component'
 import Image from '../../atoms/Image/Component'
 
-import Color from '../../../utils/Color'
+import Color, { addAlpha } from '../../../utils/Color'
 import { FiTwitter, FiGithub } from 'react-icons/fi'
 import { SiQiita } from 'react-icons/si'
 
@@ -13,20 +13,18 @@ export interface Props {}
 const Component: React.FC<Props> = () => {
   return (
     <Root>
-      <Card width="20vw">
+      <Card width="calc(80vw - 64px)">
         <Wrapper>
-          <ImageWrapper>
-            <SImage
-              src={`${process.env.PUBLIC_URL}/images/icon.png`}
-              width="8vw"
-            />
-          </ImageWrapper>
           <Profile>
             <Container>
               <Name>
                 <Typography size="32px" weight={300}>
                   いなたつ
                 </Typography>
+                <Image
+                  src={`${process.env.PUBLIC_URL}/images/icon.png`}
+                  width="64px"
+                />
               </Name>
               <Typography size="16px" weight={300}>
                 ブロックチェーンやVR、Web等の開発を気ままにやっている大学生。電算研元会長
@@ -59,29 +57,23 @@ const Component: React.FC<Props> = () => {
 
 export default Component
 
-const SImage = styled(Image)`
-  clip-path: ellipse(35% 50% at 50% 50%);
-`
 
 const Root = styled('div')`
   display: flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
 
   min-width: 320px;
   width: 24vw;
-  margin: 0px 20px;
 `
 const Wrapper = styled('div')`
   display: flex;
-  width: 100%;;
+  width: 100%; ;
 `
 const Name = styled('div')`
   display: flex;
-  flex-direction: column;
-  margin: 4px 8px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 8px;
 `
 const Profile = styled('div')`
   display: flex;

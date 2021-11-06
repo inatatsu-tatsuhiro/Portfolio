@@ -1,19 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import ProductCard from '../../components/molecules/ProductCard/Component'
+import { useWindowSize } from 'react-use'
 
 import {data} from './data'
 
 const Page: React.VFC = () => {
 
   const json = data.json
+  const width = useWindowSize().width
+  const l = width < 1400
   return (
     <div>
       <Root>
         {json.map((j) => {
           return <ProductCard name={j.name} discription={j.discription} link={j.link} linkType={j.linkType}/>
         })}
-        {[...Array(8)].map((_, k) => {
+        {l || [...Array(4)].map((_, k) => {
           return <Dummy key={k} />
         })}
       </Root>

@@ -1,8 +1,9 @@
-import Typography from 'components/atoms/Typography/Component'
 import * as React from 'react'
-import { FiLink } from 'react-icons/fi'
+import { useWindowSize } from 'react-use'
 import styled from 'styled-components'
+import { FiLink } from 'react-icons/fi'
 import Color, { addAlpha } from 'utils/Color'
+import Typography from 'components/atoms/Typography/Component'
 import Card from '../../atoms/Card/Component'
 
 export interface Props {
@@ -13,8 +14,10 @@ export interface Props {
 }
 
 const Component: React.FC<Props> = ({name, discription, link, linkType}) => {
+  const width = useWindowSize().width
+  const l = width < 1400
   return (
-    <Card width="25%">
+    <Card width={l ? '80%' : '25%'}>
       <Flex>
         <Wrapper>
           <Name size="24px" weight={300}>
@@ -30,8 +33,7 @@ const Component: React.FC<Props> = ({name, discription, link, linkType}) => {
         {link && (
           <Tooltip>
             <LinkIcon onClick={() => window.open(link)}>
-              <FiLink>
-              </FiLink>
+              <FiLink></FiLink>
             </LinkIcon>
             <div className="tooltip-text">{linkType}</div>
           </Tooltip>

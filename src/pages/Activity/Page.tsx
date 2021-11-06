@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useWindowSize } from 'react-use'
 
 import TimelineLi from '../../components/molecules/TimelineLi/Component'
 
@@ -10,10 +11,12 @@ import {data} from './data'
 const Page: React.VFC = () => {
   const [number, setNumber] = useState(-1)
   const json = data.json
+  const width = useWindowSize().width
+  const l = width < 1400
   return (
     <div>
       <Root>
-        <TimeLineUl>
+        <TimeLineUl isMini={l}>
           {json.map((j, k) => {
             return (
               <TimelineLi
@@ -42,14 +45,11 @@ const Root = styled('div')`
   }
 `
 
-const TimeLineUl = styled('ul')`
+const TimeLineUl = styled('ul')<{
+  isMini: boolean
+}>`
   list-style: none;
-  margin: 50px 0 30px 120px;
+  margin: 50px 0 30px ${props => props.isMini ? '24px' : '120px'};
   padding-ledt: 30px;
   border-left: 8px solid ${Color.white};
-`
-
-const TimeLineLi = styled('li')`
-  margin: 40px 0;
-  position: relative;
 `
