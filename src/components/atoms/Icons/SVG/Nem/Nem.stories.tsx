@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react'
 import Logo, { Props } from './Component'
 
 export default {
-  title: 'Icons/Twitter',
+  title: 'Icons/Nem',
   component: Logo,
 } as Meta
 

@@ -18,8 +18,11 @@ const Logo: React.VFC<Props> = ({ onClick }) => {
 export default Logo
 
 const Wrapper = styled('div')`
-  height: 64px;
-  width: 160px;
+  height: 32px;
+  width: 32px;
   display: flex;
   align-items: center;
+  & > * {
+    color: red !important;
+  }
 `

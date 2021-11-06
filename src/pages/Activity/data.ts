@@ -62,7 +62,7 @@ export const data = {
       disctiption: '電算研内部でのハッカソンを主催',
     },
     {
-      title: 'Opening Lineでのインターン',
+      title: 'Opening Line社でのインターン',
       date: '2020/12',
       disctiption: 'ブロックチェーンを用いたWebアプリケーションを開発 ~now',
     },

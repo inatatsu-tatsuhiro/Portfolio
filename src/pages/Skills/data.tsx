@@ -18,6 +18,8 @@ import {
   SiDeno,
 } from 'react-icons/si'
 
+import NemLogo from '../../components/atoms/Icons/SVG/Nem/Component'
+
 
 export const data = {
   json: [
@@ -134,6 +136,13 @@ export const data = {
       since: '2017/08',
       discription:
         '初めてプログラミングというものに触れた場所。はじめはJavaScript(UnityScript)を使っていた。学祭等の展示用に3DゲームやVRゲームを作ったりする。BeatSaberがしたすぎてBeatSaberを作成したりした。(完成後購入しました)',
+    },
+    {
+      name: 'Nem Symbol',
+      logo: <NemLogo />,
+      since: '2019/06',
+      discription:
+        '近畿大学で開催されたBlockChainハッカソンで初めて触れる。現在はOpenigLine社でのインターンで使用中。',
     },
   ],
 }
