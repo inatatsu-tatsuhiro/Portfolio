@@ -50,16 +50,19 @@ export const data = {
     },
     {
       name: 'Open Apostille Symbol',
-      discription:
-        'nemにて動作しているopenapostilleをsymbol版へリメイクした。coming soon',
+      discription: 'nemにて動作しているopenapostilleをsymbol版へリメイクした。',
+      link: 'https://symbol.openapostille.com',
+      linkType: 'WebApp',
     },
     {
       name: 'ScrapBook',
-      discription: '「誰かの没案は私の良案かもしれない」というコンセプトのアイデア投稿プラットフォーム Reactでフロントエンドの開発。',
+      discription:
+        '「誰かの没案は私の良案かもしれない」というコンセプトのアイデア投稿プラットフォーム Reactでフロントエンドの開発。',
     },
     {
       name: '3Dシューティング',
-      discription: '学祭展示に36時間で作成した位置固定型360度シューティングゲーム',
+      discription:
+        '学祭展示に36時間で作成した位置固定型360度シューティングゲーム',
     },
     {
       name: 'Portfolio',
