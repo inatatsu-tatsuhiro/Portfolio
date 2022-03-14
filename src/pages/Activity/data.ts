@@ -25,8 +25,7 @@ export const data = {
     {
       title: 'BlockChain ハッカソン',
       date: '2019/07',
-      disctiption:
-        '近畿大学で行われたブロックチェーンハッカソンに参加',
+      disctiption: '近畿大学で行われたブロックチェーンハッカソンに参加',
     },
     {
       title: 'CSG Summer Hack 2019',
@@ -43,8 +42,7 @@ export const data = {
     {
       title: 'CSG 会長',
       date: '2019/11',
-      disctiption:
-        '電算研会長に就任 ~2020/10',
+      disctiption: '電算研会長に就任 ~2020/10',
     },
     {
       title: '1人アドカレ',
@@ -65,6 +63,32 @@ export const data = {
       title: 'Opening Line社でのインターン',
       date: '2020/12',
       disctiption: 'ブロックチェーンを用いたWebアプリケーションを開発 ~now',
+    },
+    {
+      title: 'OpenApostille Symbol プレ公開',
+      date: '2021/12',
+      disctiption: 'OpenApostille Symbolをテストネットでプレ公開',
+    },
+    {
+      title: 'OpenApostille Symbol 公開',
+      date: '2022/1',
+      disctiption: 'OpenApostille Symbolをメインネットでリリース',
+    },
+    {
+      title: 'NEMTUS Hackathon Hack+ 2022',
+      date: '2022/2',
+      disctiption:
+        'Symbolブロックチェーンを用いたゲーム開発 シンくまノード賞 Opening Line賞',
+    },
+    {
+      title: 'SSS Extension ver. alpha リリース',
+      date: '2022/2',
+      disctiption: 'SSS Extensionのα版をリリース',
+    },
+    {
+      title: 'SSS Extension ver. 1.0.0 リリース',
+      date: '2022/3',
+      disctiption: 'SSS Extensionの正式版をリリース',
     },
   ],
 }
