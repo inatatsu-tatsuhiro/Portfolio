@@ -4,7 +4,7 @@ import Card from '../../atoms/Card/Component'
 import Typography from '../../atoms/Typography/Component'
 import Image from '../../atoms/Image/Component'
 
-import Color, { addAlpha } from '../../../utils/Color'
+import Color from '../../../utils/Color'
 import { FiTwitter, FiGithub } from 'react-icons/fi'
 import { SiQiita } from 'react-icons/si'
 
@@ -96,12 +96,6 @@ const FlexWrapper = styled('div')`
 const Container = styled('div')`
   display: flex;
   flex-direction: column;
-`
-
-const ImageWrapper = styled('div')`
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
 
 const IconWrapper = styled('div')`

@@ -7,11 +7,10 @@ import Products from '../pages/Products/Page'
 import Skills from '../pages/Skills/Page'
 import Activity from '../pages/Activity/Page'
 
-import NormalLayout, { Props as LayoutProps} from './Layout'
+import NormalLayout, { Props as LayoutProps } from './Layout'
 import MinimumLayout from './MinimumLayout'
 
 const Router: React.VFC = () => {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -35,15 +34,15 @@ const Router: React.VFC = () => {
 
 export default Router
 
-const MINIMUM = 'MINMUM'
-const NORMAL = 'NORMAL'
-
-const Layout: React.VFC<LayoutProps> = ({title, page}) => {
+const Layout: React.VFC<LayoutProps> = ({ title, page }) => {
   const width = useWindowSize().width
-  const l =  width < 1400
-  return l ? <MinimumLayout {...{title, page}} /> : <NormalLayout {...{title, page}} />
+  const l = width < 1400
+  return l ? (
+    <MinimumLayout {...{ title, page }} />
+  ) : (
+    <NormalLayout {...{ title, page }} />
+  )
 }
-
 
 /****************************************************************
 
