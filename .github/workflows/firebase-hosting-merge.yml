@@ -24,7 +24,7 @@ jobs:
         cache: 'npm'
 
     - name: npm install
-      run: rm ./package-lock.json && npm i
+      run: rm ./yarn.lock && npm i
 
     - name: Deploy
       run: npm run deploy --token "$FIREBASE_TOKEN"
