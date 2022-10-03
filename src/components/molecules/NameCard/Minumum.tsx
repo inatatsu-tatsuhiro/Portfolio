@@ -27,7 +27,7 @@ const Component: React.FC<Props> = () => {
                 />
               </Name>
               <Typography size="16px" weight={300}>
-                ブロックチェーンやVR、Web等の開発を気ままにやっている大学生。電算研元会長
+                ブロックチェーンやVR、Web等の開発を気ままにやっている大学院生。電算研元会長
               </Typography>
               <FlexWrapper>
                 <IconWrapper
@@ -56,7 +56,6 @@ const Component: React.FC<Props> = () => {
 }
 
 export default Component
-
 
 const Root = styled('div')`
   display: flex;

@@ -1,6 +1,33 @@
 export const data = {
   json: [
     {
+      name: 'SSS Extension',
+      discription:
+        'Symbolブロックチェーンを扱うWebアプリケーションと連携し、署名を安全に行うためのブラウザ拡張機能',
+      link:
+        'https://chrome.google.com/webstore/detail/sss-extension/llildiojemakefgnhhkmiiffonembcan',
+      linkType: 'ChromeExtension',
+    },
+    {
+      name: 'SSS Demo React',
+      discription:
+        'Reactで開発したSSSをWebアプリケーションに導入するデモアプリケーション',
+      link: 'https://inatatsu-tatsuhiro.github.io/SSS-Demo/',
+      linkType: 'ChromeExtension',
+    },
+    {
+      name: 'SSS Module',
+      discription: 'SSS Extensionとの接続を簡単にするnpm module',
+      link: 'https://www.npmjs.com/package/sss-module',
+      linkType: 'npm',
+    },
+    {
+      name: 'SSS Documents',
+      discription: 'SSS ExtensionとSSS moduleのドキュメント',
+      link: 'https://docs.sss-symbol.com/',
+      linkType: 'Webapp',
+    },
+    {
       name: 'BeatSaber -Unity-',
       discription:
         'BeatSaberがしたい。VRゲームを作りたい。DTMしてる部員の作品を展示映えさせたい。の3つを同時に解決するためのソリューション。コロナで展示できてないが？？？作譜エディタやBeatSaverからカスタム譜面の読み込み機能も作成した。完成後BeatSaberは買いました。',
@@ -75,27 +102,6 @@ export const data = {
       discription: 'NEMTUS Hackathon Hack+ 2022で作成したArtを繋ぐゲーム',
       link: 'https://inatatsu-tatsuhiro.github.io/SymbolDraw/',
       linkType: 'WebApp',
-    },
-    {
-      name: 'SymbolDraw',
-      discription: 'NEMTUS Hackathon Hack+ 2022で作成したArtを繋ぐゲーム',
-      link: 'https://inatatsu-tatsuhiro.github.io/SymbolDraw/',
-      linkType: 'WebApp',
-    },
-    {
-      name: 'SSS Extension',
-      discription:
-        'Symbolブロックチェーンを扱うWebアプリケーションと連携し、署名を安全に行うためのブラウザ拡張機能',
-      link:
-        'https://chrome.google.com/webstore/detail/sss-extension/llildiojemakefgnhhkmiiffonembcan',
-      linkType: 'ChromeExtension',
-    },
-    {
-      name: 'SSS Demo React',
-      discription:
-        'Reactで開発したSSSをWebアプリケーションに導入するデモアプリケーション',
-      link: 'https://inatatsu-tatsuhiro.github.io/SSS-Demo/',
-      linkType: 'ChromeExtension',
     },
   ],
 }

@@ -29,7 +29,7 @@ const Component: React.FC<Props> = () => {
                 </Typography>
               </Name>
               <Typography size="16px" weight={300}>
-                ブロックチェーンやVR、Web等の開発を気ままにやっている大学生。電算研元会長
+                ブロックチェーンやVR、Web等の開発を気ままにやっている大学院生。電算研元会長
               </Typography>
               <FlexWrapper>
                 <IconWrapper
@@ -76,7 +76,7 @@ const Root = styled('div')`
 `
 const Wrapper = styled('div')`
   display: flex;
-  width: 100%;;
+  width: 100%; ;
 `
 const Name = styled('div')`
   display: flex;
