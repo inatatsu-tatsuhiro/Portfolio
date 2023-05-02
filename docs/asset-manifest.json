@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c029a7e.chunk.css",
+    "main.js": "/static/js/main.95c1aaee.chunk.js",
+    "main.js.map": "/static/js/main.95c1aaee.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d42431eb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d42431eb.js.map",
+    "static/js/2.a4df9d45.chunk.js": "/static/js/2.a4df9d45.chunk.js",
+    "static/js/2.a4df9d45.chunk.js.map": "/static/js/2.a4df9d45.chunk.js.map",
+    "static/js/3.b2649a8b.chunk.js": "/static/js/3.b2649a8b.chunk.js",
+    "static/js/3.b2649a8b.chunk.js.map": "/static/js/3.b2649a8b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1c029a7e.chunk.css.map": "/static/css/main.1c029a7e.chunk.css.map",
+    "static/js/2.a4df9d45.chunk.js.LICENSE.txt": "/static/js/2.a4df9d45.chunk.js.LICENSE.txt",
+    "static/media/global.css": "/static/media/Tanugo-Regular.0a4d8d89.woff2",
+    "static/media/image.2c4749eb.svg": "/static/media/image.2c4749eb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d42431eb.js",
+    "static/js/2.a4df9d45.chunk.js",
+    "static/css/main.1c029a7e.chunk.css",
+    "static/js/main.95c1aaee.chunk.js"
+  ]
+}
